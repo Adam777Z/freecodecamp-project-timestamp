@@ -1,28 +1,28 @@
 {
-	"name": "freecodecamp-project-timestamp",
-	"version": "1.0.0",
-	"description": "freeCodeCamp - APIs and Microservices Project: Timestamp Microservice",
-	"author": "Adam",
-	"main": "server.js",
-	"scripts": {
-		"start": "node server.js"
-	},
-	"dependencies": {
-		"express": "^4.16.4",
-		"cors": "^2.8.5"
-	},
-	"engines": {
-		"node": "10.14.1"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/Adam777Z/freecodecamp-project-timestamp.git"
-	},
-	"keywords": [
-		"glitch",
-		"node",
-		"express",
-		"freecodecamp"
-	],
-	"license": "MIT"
+  "name": "freecodecamp-project-timestamp",
+  "description": "freeCodeCamp - APIs and Microservices Project: Timestamp Microservice",
+  "version": "1.0.0",
+  "author": "Adam",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "cors": "^2.8.5"
+  },
+  "engines": {
+    "node": "10.14.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Adam777Z/freecodecamp-project-timestamp.git"
+  },
+  "keywords": [
+    "glitch",
+    "node",
+    "express",
+    "freecodecamp"
+  ],
+  "license": "MIT"
 }
