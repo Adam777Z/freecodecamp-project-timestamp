@@ -32,19 +32,27 @@ var listener = app.listen(process.env.PORT, function () {
 });
 
 
-app.get('/api/timestamp/:date_string?', function (req, res) {
+app.get('/api/:date_string?', function (req, res) {
   let date_input = req.params.date_string;
   let date = new Date();
   
-  if (isNumeric(date_input)) {
-    date_input = parseInt(date_input);
-  }
-  
   if (date_input !== undefined) {
+    if (isNumeric(date_input)) {
+      date_input = parseInt(date_input);
+    }
+    
     date = new Date(date_input);
   }
-  
-  return res.json({ unix: date.getTime(), utc: date.toUTCString() });
+
+  utc = date.toUTCString();
+
+  if (utc == 'Invalid Date') {
+    data = { error: utc };
+  } else {
+    data = { unix: date.getTime(), utc: utc };
+  }
+
+  return res.json(data);
 });
 
 function isNumeric(n) {

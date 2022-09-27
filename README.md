@@ -11,12 +11,12 @@
 4. If the date string is **valid** the api returns a JSON having the structure 
 `{"unix": <date.getTime()>, "utc" : <date.toUTCString()> }`
 e.g. `{"unix": 1479663089000 ,"utc": "Sun, 20 Nov 2016 17:31:29 GMT"}`.
-5. If the date string is **invalid** the api returns a JSON having the structure `{"unix": null, "utc" : "Invalid Date" }`.  
+5. If the input date string is **invalid** the api returns a JSON having the structure `{ "error": "Invalid Date" }`.  
 It is what you get from the date manipulation functions used above.
 
 #### Example usage:
-* https://adam777z-freecodecamp-project-timestamp.glitch.me/api/timestamp/2015-12-15
-* https://adam777z-freecodecamp-project-timestamp.glitch.me/api/timestamp/1450137600000
+* https://freecodecamp-project-timestamp.adam777z.repl.co/api/2015-12-25
+* https://freecodecamp-project-timestamp.adam777z.repl.co/api/1451001600000
 
 #### Example output:
-* { "unix": 1450137600, "natural": "December 15, 2015" }
+* {"unix":1451001600000,"utc":"Fri, 25 Dec 2015 00:00:00 GMT"}
