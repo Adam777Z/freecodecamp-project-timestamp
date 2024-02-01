@@ -17,6 +17,9 @@ It is what you get from the date manipulation functions used above.
 #### Example usage:
 * /api/2015-12-25
 * /api/1451001600000
+* /api/1451001600
+* /api/
+* /api/invalid
 
 #### Example output:
 * {"unix":1451001600000,"utc":"Fri, 25 Dec 2015 00:00:00 GMT"}
